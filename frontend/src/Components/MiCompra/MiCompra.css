@@ -1,0 +1,114 @@
+.micompra {
+    min-height: 45vh;
+    margin: 61px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.micompra h2 {
+    margin-bottom: 23px;
+    color: #333;
+    text-align: center;
+}
+
+.micompra .dateCompra {
+    text-align: right;
+    font-size: 15px;
+    padding: 0px;
+    margin: 5px 0px;
+    font-weight: 300;
+}
+
+.micompra p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.micompra-items {
+    background-color: #fff;
+    padding: 15px 15px 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.micompra-items ul {
+    list-style-type: none;
+    padding: 0px 0px 0px 10px;
+}
+
+.micompra-items li {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.micompra-total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.items-title p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.items-title, .item-row {
+    display: grid;
+    grid-template-columns: 2.5fr 0.5fr 0.5fr 0.5fr
+}
+
+.special-left-align {
+    text-align: left;
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .items-title, .item-row {
+        grid-template-columns: 1.7fr 0.6fr 0.6fr 0.6fr
+    }
+
+    .cantidad {
+        text-align: center;
+    }
+
+    .micompra {
+        margin: 25px 15px;
+        padding: 10px;
+    }
+
+    .micompra .dateCompra {
+        font-size: 14px;
+    }
+
+    .micompra p {
+        font-size: 17px;
+    }
+
+    .micompra-items {
+        padding: 10px;
+    }
+
+    .micompra-items li {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .micompra-total p {
+        font-size: 16px;
+    }
+
+    .items-title p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

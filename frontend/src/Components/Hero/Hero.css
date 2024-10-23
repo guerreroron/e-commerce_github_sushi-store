@@ -1,0 +1,151 @@
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    background-color: #E8E8E8;
+}
+ 
+.hero h2 {
+    font-weight: 200;
+    font-size: 40px;
+    color: #2B2B2B;
+    background-color: #42584A;
+    margin: 0px;
+    color: #E8E8E8;
+    padding: 50px 0px;
+}
+ 
+.hero-carrousel {
+    background-color: #a65e5e;
+    border-left: 1px solid #70998B;
+    border-right: 1px solid #70998B;
+    width: 200px;
+    height: 150px;
+}
+
+.pather-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #42584A;
+    padding-bottom: 70px;
+}
+  
+.pather {
+    padding: 40px;
+    margin: 10px 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #70998B; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.child-left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+    flex: 1.3;
+    text-align: left;
+    color: #fff; 
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.child-left span {
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+.child-right {
+    flex: 0.7;
+}
+
+.child-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hero-btn button {
+    margin-top: 20px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4B4B4B;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn button:hover {
+    background-color: #655;
+}
+
+@media(max-width:800px){
+    .hero {
+        padding: 40px 0px 80px 0px;
+    }
+
+
+    .hero h2 {
+        font-weight: 200;
+        font-size: 30px;
+        color: #E8E8E8;
+    }
+
+    .hero-promo {
+        width: 90vw;
+    }
+
+    .pather {
+        padding: 20px;
+        width: 82vw;
+    }
+
+     .child-left p {
+        padding: 0px 0px;
+        font-size: 12px;
+        max-width: 34vw;
+        margin: 5px 0px;
+    }
+
+    .child-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .child-right img {
+        max-width: 37vw;
+    }
+
+    .hero-btn button {
+        font-size: 12px;
+        width: 150px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .child-left span {
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 0px;
+    }
+
+    .hero-carrousel {
+        width: 90vw;
+    }
+
+    .slide {
+        height: 180px;
+    }
+}

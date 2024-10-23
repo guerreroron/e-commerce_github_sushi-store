@@ -1,0 +1,23 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+body {
+    min-width: 480px;
+    margin: 0 auto;
+    font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+    background-color: #E8E8E8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* body div {
+    border: 1px dashed blue;
+}  */

@@ -1,0 +1,226 @@
+.cartitems-container {
+    margin: 50px 0px;
+}
+
+.cartitems {
+    margin: 20px 13%;
+    height: auto;
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 0.8fr 2.8fr 0.8fr 0.6fr 0.8fr 0.6fr 0.6fr;
+    background-color: #f9f9f9;
+    padding: 10px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.hr-top {
+    border-bottom: 1px solid #ddd;
+}
+
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 0.8fr 2.8fr 0.8fr 0.6fr 0.8fr 0.6fr 0.6fr;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 0px;
+}
+
+.cartitems-format span {
+    font-size: smaller;
+    margin: 0px;
+    padding: 5px 0px 0px;
+
+}
+
+.cartitems-format-title {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.cartitems-format-title p {
+    margin: 0px;
+}
+
+.cartitems-format img {
+    cursor: pointer;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.cart-item-product-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cartitems-quantity {
+    width: 40px;
+    background-color: #e0e0e0;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    cursor: not-allowed;
+}
+
+.cartitems-format img[alt="remove-icon"] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.cartitems-format img[alt="add-icon"] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 15px 0;
+} 
+
+.cartitems-down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.cartitems-total {
+    flex: 1;
+    width: 80%;
+    background-color: #ffffff;
+    padding: 10px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-total h3, .cartitems-total h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cartitems-total-item {
+    margin-bottom: 0px;
+}
+
+.cartitems-total-item div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.cartitems-total-item p, .cartitems-total-item h4 {
+    margin: 0;
+}
+
+.cartitems-total button {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cartitems-total button:hover {
+    background-color: #555;
+}
+
+.cartitems-promocode {
+    flex: 1;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.cartitems-promocode p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cartitem-promobox {
+    display: flex;
+}
+
+.cartitem-promobox input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.cartitem-promobox button {
+    flex: 0.5;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.cartitem-promobox button:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 1213px) {
+    .cartitems-quantity {
+        font-size: 14px;
+    }
+
+    .cartitems-format-main {
+        grid-template-columns: 1fr 1fr 0.6fr 0.6fr 0.6fr 0.4fr 0.5fr;
+
+    }
+
+    .cartitems-format {
+        grid-template-columns: 1fr 1fr 0.6fr 0.6fr 0.6fr 0.4fr 0.5fr;
+    }
+
+    .cartitems-down {
+        flex-direction: column;
+    }
+
+    .cartitems-total {
+        margin: auto;
+    }
+
+    .cartitems-total button {
+        margin: 15px 0px;
+    }
+
+    .cartitems-promocode {
+        width: 50vw;
+        margin: auto;
+    }
+
+    .cartitem-promobox {
+        justify-content: center;
+    }
+
+    .cartitems-format-title {
+        padding-right: 10px;
+    }
+
+}

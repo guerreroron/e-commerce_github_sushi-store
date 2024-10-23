@@ -1,0 +1,191 @@
+.userlist {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 92vw;
+    max-width: 800px; 
+    margin: 10px auto;
+    border-radius: 6px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 800px; 
+    overflow-y: auto; 
+  }
+
+  .userlist select {
+    width: 200px;
+    padding: 7px;
+    border: 1px solid #aaa;   /* #564787 */
+    border-radius: 7px;
+    background-color: #F8F8F9;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .userlist select .option {
+    color: #aaa;
+  }
+  
+  .userlist h2 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 24px;
+    color: #564787;
+  }
+  
+  .userlist-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr 0.7fr 0.7fr 0.8fr 0.8fr; 
+    align-items: center;
+    padding: 10px 0px;
+    background-color: white;
+    color: #564787;
+  }
+  
+  .userlist-main.headers {
+    font-weight: 600;
+    padding-bottom: 0px;
+  }
+
+  .userlist-main.headers .special{
+    text-align: left;
+  }
+  
+  .userlist-main p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .userlist-allusers {
+    margin-top: 10px;
+    width: 100%;
+    max-height: 570px; 
+    overflow-y: auto; 
+  }
+
+  .userlist-remove-icon, .userlist-orders-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .userlist-main.list:hover {
+    background-color: #F2FDFF;
+  }
+  
+  .userlist-main.list {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .userlist-main.list p {
+    text-align: left;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #c4c4c4;
+    margin: 10px 0;
+  }
+
+  .modal {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 92vw;
+    max-width: 500px;
+    background-color: #F1F1F1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000; 
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #564787;
+    text-align: center;
+    font-weight: 400;
+}
+
+.modal h2 span {
+    color: darkred;
+    font-weight: 600;
+    line-height: 1.5;
+    position: relative;
+    top: 5px;
+}
+
+.modal button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #564787;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #45336a;
+}
+
+.modal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal ul li {
+    padding: 0px;
+}
+
+.modal ul li:last-child {
+    border-bottom: none;
+}
+
+.modal-date {
+    font-weight: 600;
+}
+
+.modal .totalSpent {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    top: -5px;
+}
+  
+  @media(max-width:800px) {
+    .userlist {
+        max-height: 600px; 
+    }
+
+    .userlist p {
+        font-size: 14px;
+    }
+
+    .userlist h2 {
+      margin-top: 0px;
+    }
+  
+    .userlist-allproducts {
+      max-height: 460px; 
+    }
+
+    .modal {
+        width: 84vw;
+    }
+  }

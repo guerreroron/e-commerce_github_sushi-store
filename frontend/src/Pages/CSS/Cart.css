@@ -1,0 +1,12 @@
+.cartitems {
+    min-height: calc(100vh - 340px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width:1200px) {
+    .cartitems {
+        min-height:60vh;
+    }
+}

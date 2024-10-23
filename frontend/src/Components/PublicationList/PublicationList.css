@@ -1,0 +1,48 @@
+.publication-box {
+    width: 90%;
+    margin: 30px auto;
+    border: 1px solid #9f9f9f;
+    background-color: #42584A;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 20px;
+}
+
+.publication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publication-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.publication-date {
+    font-size: 14px;
+    color: #cbc8c8;
+}
+
+.publication-content {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.publication-likes-comments {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .publication-box {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .publication-content {
+        font-size: 15px;
+    }
+}

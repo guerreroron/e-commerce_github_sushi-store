@@ -1,0 +1,47 @@
+.container-offers {
+    background-color: #42584A;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    height: auto;
+}
+  
+.container-offers h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    color: #FFF;
+}
+ 
+.offers {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.item-container {
+    background-color: #E8E8E8;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.offers img {
+    border-radius: 5px;
+}
+
+@media(max-width:800px) {
+    .container-offers h2 {
+        font-size: 30px;
+    }
+
+    .offers {
+        grid-template-columns: 1fr;
+    }
+}

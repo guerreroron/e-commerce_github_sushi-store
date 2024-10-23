@@ -1,0 +1,148 @@
+.sendemail-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    width: 92vw;
+    max-width: 600px;
+    margin: 10px auto;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sendemail-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #564787;
+}
+
+.sendemail-field {
+    margin-bottom: 15px;
+}
+
+.sendemail-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #564787;
+}
+
+.sendemail-input,
+.sendemail-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #9AD4D6;
+    outline: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #101935;
+    font-size: 15px;
+}
+
+.sendemail-textarea {
+    min-height: 100px;
+}
+
+.sendemail-input:focus,
+.sendemail-textarea:focus {
+    border-color: #564787;
+}
+
+.sendemail-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sendemail-button {
+    margin: 15px 0px;
+    width: 50%;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #564787;
+    border: none;
+    color: #F2FDFF;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sendemail-button:hover {
+    background-color: #6A5A99;
+}
+
+.sendemail-button:active {
+    background-color: #45356C; 
+    transform: scale(0.98);
+}
+
+
+.alertmessage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    color: green;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.alert {
+    position: relative;
+    background-color: #f8d7da;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    transform: translateY(10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.alertmessage.active .alert {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.destinatarios-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    margin-top: 0px;
+}
+
+.destinatarios {
+    font-weight: 300;
+    font-size: 0.85em;
+    word-break: break-word;
+    margin: 0px;
+}
+
+@media(max-width: 800px) {
+    .sendemail-container {
+        padding: 10px 20px;
+    }
+
+    .sendemail-input,
+    .sendemail-textarea {
+        height: 40px;
+    }
+
+    .sendemail-field {
+        margin-bottom: 5px;
+    }
+
+    .sendemail-label {
+        font-size: 14px;
+    }
+}

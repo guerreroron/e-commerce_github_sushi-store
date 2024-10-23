@@ -1,0 +1,160 @@
+.addadmin {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    width: 92vw;
+    max-width: 600px;
+    margin: 10px auto;
+    border-radius: 6px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.addadmin h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #564787;
+}
+
+.addadmin-item-field {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #564787;
+    margin-bottom: 15px;
+}
+
+.addadmin-item-field-image {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #564787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.addadmin-item-field-image .main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.addadmin-item-field-image .main-image img {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #999;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.addadmin-item-field-image .main-image img:hover {
+    filter: brightness(0.9);
+}
+
+.addadmin-item-field input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #9AD4D6;
+    outline: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #101935;
+    font-size: 15px;
+}
+
+.addadmin-btn-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.addadmin-btn {
+    margin: 15px 0px;
+    width: 50%;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #564787;
+    border: none;
+    color: #F2FDFF;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addadmin-btn:hover {
+    background-color: #6A5A99;
+}
+
+.addadmin-btn:active {
+    background-color: #45356C; 
+    transform: scale(0.98);
+}
+
+.alertmessage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    color: green;
+    font-weight: 300;
+    z-index: 10;
+    position: relative; 
+    margin: 5px 50px;
+}
+
+.alert {
+    position: absolute;
+    bottom: -30px;
+    background-color: #f8d7da;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    transform: translateY(10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.alertmessage.active .alert {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width: 800px) {
+    .addadmin {
+        padding: 10px 20px;
+    }
+
+    .addadmin p {
+        font-size: 14px;
+    }
+
+    .addadmin-item-field input {
+        height: 40px;
+    }
+
+    .addadmin-item-field {
+        margin-bottom: 5px;
+    }
+
+    .addadmin-item-field p {
+        margin: 8px 0px;
+    }
+}

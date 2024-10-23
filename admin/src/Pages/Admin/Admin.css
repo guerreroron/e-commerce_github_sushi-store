@@ -1,0 +1,14 @@
+body {
+    background-color: #f2FDFF;
+}
+
+.admin-container{
+    display: flex;
+}
+
+@media(max-width: 800px) {
+    .admin-container {
+        flex-direction: column;
+    }
+}
+

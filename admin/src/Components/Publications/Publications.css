@@ -1,0 +1,110 @@
+.publications {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 92vw;
+    max-width: 800px;
+    margin: 10px auto;
+    border-radius: 6px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .publications h2 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 24px;
+    color: #564787;
+  }
+  
+  .publications-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.7fr 0.6fr; 
+    align-items: center;
+    padding: 10px 0px;
+    background-color: white;
+    color: #564787;
+  }
+  
+  .publications-main.headers {
+    font-weight: 600;
+  }
+
+  .publications-main p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .author-date p {
+    padding: 5px 10px 5px 0px;
+  }
+
+  .author-date span {
+    font-weight: 600;
+  }
+  
+  .publications-list {
+    width: 100%;
+    max-height: 570px; 
+    overflow-y: auto; 
+  }
+  
+  .publications-main.list {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .contenido p {
+    text-align: left;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  
+  .publications-main.list .content-preview {
+    text-align: justify;
+    font-size: 13px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .publications-main.list:hover {
+    background-color: #F2FDFF;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #c4c4c4;
+    margin: 10px 0;
+  }
+
+@media(max-width: 800px) {
+    .publications-list {
+        max-height: 450px; 
+        overflow-y: auto; 
+    }
+
+    .publications p {
+        font-size: 12px;
+    }
+
+    .publications-main.list .content-preview {
+        font-size: 11.5px;
+    }
+}
